@@ -1,0 +1,424 @@
+/* Ralenway => */ @import url('https://fonts.googleapis.com/css2?family=Alata&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* Open Sans => */ @import url('https://fonts.googleapis.com/css2?family=Alata&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /* ## - COLORS */
+
+/* Primary */
+    --Dark-Blue-Bg-Intro-and-Email: rgb(28, 36, 49); /*(intro and email sign up background)*/
+    --Dark-Blue-Bg-Main: rgb(24, 31, 42); /*(main background)*/
+    --Dark-Blue-Bg-Footer: rgb(11, 21, 35); /*(footer background)*/
+    --Dark-Blue-Bg-testimonials: rgb(32, 42, 60); /* (testimonials background)*/
+/* Accent */
+    --Cyan: rgb(101, 226, 217); /* (inside call-to-action gradient)*/
+    --Blue: rgb(51, 158, 204); /* (inside call-to-action gradient)*/
+    --Light-Red: rgb(255, 66, 66); /* (message error)*/
+/* Neutral */
+    --White: rgb(255, 255, 255);
+    --White-Dark: rgba(204, 204, 204, 0.986);
+/* Prueva */
+    --Prueva: rgb(241, 102, 84);
+    
+    /* ## - FONTS */
+    --Raleway: "Raleway", sans-serif;
+    --Open-Sans: "Open Sans", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--Dark-Blue-Bg-Intro-and-Email);
+    color: var(--White);
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+.box-nav a{
+    margin-right: 40px;
+    text-decoration: none;
+    color: var(--White-Dark);
+    font-family: var(--Raleway);
+}
+
+.box-nav a:hover{
+    color: var(--White);
+}
+
+.section-main{
+    width: 55%;
+    margin-bottom: 90px;
+    z-index: 40;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.text-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text-main .p-title{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    line-height: 50px;
+    font-size: 35px;
+    font-family: var(--Raleway);
+    font-weight: 700;
+}
+
+.text-main .p-info{
+    width: 65%;
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-size: 1rem;
+    font-family: var(--Open-Sans);
+    font-weight: 300;
+}
+
+.btn-get-started{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    font-family: var(--Open-Sans);
+    font-weight: 700;
+    background: linear-gradient(130deg, var(--Cyan), var(--Blue) 80%);
+    color: var(--White);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-get-started:hover{
+    background: var(--Cyan);
+}
+
+.section-about{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background: var(--Dark-Blue-Bg-Main);
+}
+
+.section-about > picture{
+    position: absolute;
+    top: -450px;
+    z-index: 10;
+}
+
+.box-card-about{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-bottom: 80px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 60px;
+}
+
+.card img{
+    margin-bottom: 30px;
+}
+
+.card .card-title{
+    font-family: var(--Open-Sans);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card .card-info{
+    font-family: var(--Raleway);
+    font-weight: 300;
+    text-align: center;
+}
+
+.info-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-bottom: 150px;
+}
+
+.info-about img{
+    margin-right: 50px;
+}
+
+.info-about .title-about{
+    width: 400px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: var(--Open-Sans);
+    font-weight: 700;
+}
+
+.box-p-about{
+    margin-bottom: 30px;
+}
+
+.box-p-about p{
+    margin-bottom: 10px;
+    font-family: var(--Raleway);
+    font-weight: 300;
+}
+
+.info-about .btn-see{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    font-family: var(--Raleway);
+    color: var(--Cyan);
+}
+
+.btn-see:hover{
+    color: var(--White);
+}
+
+.box-testimonials{
+    position: relative;
+    width: 90%;
+    margin-bottom: 200px;
+}
+
+.box-testimonials .comillas{
+    position: absolute;
+    top: -33px;
+    left: -10px;
+    z-index: 10;
+}
+
+.testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    font-family: var(--Raleway);
+}
+
+.card-testimonial{
+    width: 300px;
+    padding: 30px;
+    background: var(--Dark-Blue-Bg-testimonials);
+    border-radius: 5px;
+    z-index: 50;
+}
+
+.card-testimonial p{
+    margin-bottom: 20px;
+}
+
+.card-testimonial .user{
+    display: flex;
+    align-items: center;
+}
+
+.card-testimonial img{
+    width: 10%;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.card-testimonial .user-info{
+    height: 40px;
+}
+
+.user-info p{
+    margin: 0;
+}
+
+.user-info .name{
+    font-weight: 700;
+}
+
+.get-up-free{
+    position: absolute;
+    bottom: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    border-radius: 10px;
+    padding: 40px;
+    background: var(--Dark-Blue-Bg-Intro-and-Email);
+}
+
+.title-get-up-free{
+    font-size: 30px;
+    font-family: var(--Open-Sans);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.info-get-up-free{
+    font-size: 14px;
+    font-family: var(--Raleway);
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.inputs{
+    display: flex;
+    gap: 30px;
+}
+
+#input-email{
+    width: 90%;
+    height: 1px;
+    border-radius: 30px;
+    border: none;
+    padding: 20px;
+}
+
+.btn-email{
+    width: 50%;
+    height: 40px;
+    border-radius: 30px;
+    font-family: var(--Open-Sans);
+    font-weight: 700;
+    color: var(--White);
+    background: var(--Blue);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-email:hover{
+    background: var(--Cyan);
+}
+
+.error-message{
+    margin-top: 20px;
+    text-align: left;
+    font-family: var(--Raleway);
+    color: var(--Light-Red);
+}
+
+.none{
+    display: none;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-family: var(--Raleway);
+    width: 100%;
+    height: 400px;
+    background: var(--Dark-Blue-Bg-Footer);
+}
+
+.footer-logo{
+    margin-bottom: 30px;
+}
+
+.cont-footer{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 150px;
+}
+
+.info-footer{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.contact{
+    display: flex;
+    margin-right: 80px;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin-right: 40px;
+}
+
+.location img{
+    margin-right: 20px;
+}
+
+.tel, .email{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tel img, .email img{
+    margin-right: 20px;
+}
+
+.nav-footer{
+    display: flex;
+    margin-right: 40px;
+}
+
+.nav-footer a{
+    text-decoration: none;
+    color: var(--White);
+    margin-bottom: 20px;
+}
+
+.nav-footer a:hover{
+    color: var(--White);
+    font-weight: 700;
+}
+
+.l1, .l2{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.social-media img{
+    margin-right: 10px;
+}
+
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */

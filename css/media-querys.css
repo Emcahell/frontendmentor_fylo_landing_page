@@ -1,0 +1,54 @@
+@media (max-width: 600px) {
+
+    .box-card-about{
+        display: flex;
+        justify-content: center;
+    }
+
+    .testimonials{
+        margin-bottom: 150px;
+    }
+
+    .get-up-free{
+        width: 80%;
+    }
+
+    .inputs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .btn-email{
+        width: 90%;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    .info-footer{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .location{
+        margin-bottom: 20px;
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .social-media{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
